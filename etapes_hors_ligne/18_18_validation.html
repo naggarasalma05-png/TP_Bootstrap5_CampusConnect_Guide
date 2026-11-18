@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 18 - Validation HTML5 + messages Bootstrap</title>
+  <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+</head>
+<body>
+<main class="container py-4"><h2>Validation d’un formulaire</h2>
+  <form id="formDemo" class="row g-3 needs-validation" novalidate>
+    <div class="col-md-6"><label class="form-label" for="nomV">Nom (3 caractères min.)</label><input class="form-control" id="nomV" minlength="3" required><div class="invalid-feedback">Veuillez saisir au moins trois caractères.</div></div>
+    <div class="col-md-6"><label class="form-label" for="mailV">E-mail</label><input class="form-control" type="email" id="mailV" required><div class="invalid-feedback">Veuillez fournir une adresse e-mail valide.</div></div>
+    <div class="col-12"><div class="form-check"><input class="form-check-input" type="checkbox" id="accordV" required><label class="form-check-label" for="accordV">J’accepte les conditions.</label><div class="invalid-feedback">Vous devez accepter les conditions.</div></div></div>
+    <div class="col-12"><button class="btn btn-primary" type="submit">Valider</button></div>
+  </form>
+  <p id="retourV" class="mt-3" role="status" aria-live="polite"></p>
+</main>
+<script src="../vendor/bootstrap.bundle.min.js"></script>
+  <script>
+document.getElementById('formDemo').addEventListener('submit', function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  this.classList.add('was-validated');
+  const retour = document.getElementById('retourV');
+  retour.textContent = this.checkValidity() ? 'Bravo : saisie valide (démonstration locale).' : 'Corrigez les champs indiqués en rouge.';
+  retour.className = this.checkValidity() ? 'text-success mt-3' : 'text-danger mt-3';
+});
+  </script>
+</body>
+</html>

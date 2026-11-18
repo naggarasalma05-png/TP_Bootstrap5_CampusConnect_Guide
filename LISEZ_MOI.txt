@@ -1,0 +1,22 @@
+TP UNIQUE BOOTSTRAP 5 — CampusConnect
+
+1) Ouvrir index.html depuis cette archive extraite (version connectée).
+2) Suivre le DOCX fourni, étape par étape, du numéro 01 au 27.
+3) Chaque fichier etapes/NN_...html est TERMINÉ et PRÊT À TESTER.
+4) En absence de connexion : ouvrir etapes_hors_ligne/NN_...html.
+5) Projet final : projet_final/index.html (CDN 5.3.9).
+6) Projet final hors ligne : projet_final/index_hors_ligne.html (Bootstrap 5.3.6 fourni).
+
+PRÉCISION SUR LES VERSIONS
+Le CDN utilise Bootstrap 5.3.9 (documentation officielle au 15 novembre 2026).
+Le répertoire vendor/ contient Bootstrap 5.3.6 pour fonctionnement sans Internet.
+Les composants étudiés sont disponibles dans les deux versions.
+
+AUCUN SERVEUR NI BASE DE DONNÉES
+Les formulaires simulent une validation côté navigateur, sans envoi réel.
+Le filtre du projet final affiche une notification sans filtrer les cartes.
+
+DROITS : Bootstrap (c) auteurs Bootstrap, licence MIT.
+Les illustrations SVG de démonstration ont été créées pour ce TP.
+
+MENU HORS LIGNE : index_hors_ligne.html

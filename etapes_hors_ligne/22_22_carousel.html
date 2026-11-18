@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 22 - Carrousel d’images</title>
+  <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+  <style>
+.carousel-item img {height:340px;object-fit:cover;}
+  </style>
+</head>
+<body>
+<main class="container py-4"><h2>Galerie du campus</h2>
+  <div id="galerieCampus" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#galerieCampus" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositive 1"></button>
+      <button type="button" data-bs-target="#galerieCampus" data-bs-slide-to="1" aria-label="Diapositive 2"></button>
+      <button type="button" data-bs-target="#galerieCampus" data-bs-slide-to="2" aria-label="Diapositive 3"></button>
+    </div>
+    <div class="carousel-inner rounded">
+      <div class="carousel-item active"><img src="../projet_final/assets/web.svg" class="d-block w-100" alt="Atelier développement web"></div>
+      <div class="carousel-item"><img src="../projet_final/assets/data.svg" class="d-block w-100" alt="Atelier données"></div>
+      <div class="carousel-item"><img src="../projet_final/assets/cloud.svg" class="d-block w-100" alt="Atelier cloud"></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#galerieCampus" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Précédent</span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#galerieCampus" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Suivant</span></button>
+  </div>
+</main>
+<script src="../vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

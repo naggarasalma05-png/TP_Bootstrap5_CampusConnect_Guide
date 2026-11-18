@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 14 - Cartes Bootstrap et grille de présentation</title>
+  <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+</head>
+<body>
+<main class="container py-4">
+  <h2>Les ateliers du campus</h2>
+  <div class="row g-3">
+    <div class="col-12 col-md-4"><div class="card h-100">
+      <img src="../projet_final/assets/web.svg" class="card-img-top" alt="Illustration atelier web">
+      <div class="card-body d-flex flex-column"><h3 class="card-title h5">Web</h3><p class="card-text">HTML, CSS et Bootstrap.</p><a href="#details" class="btn btn-primary mt-auto">Voir le détail</a></div>
+    </div></div>
+    <div class="col-12 col-md-4"><div class="card h-100">
+      <img src="../projet_final/assets/data.svg" class="card-img-top" alt="Illustration atelier données">
+      <div class="card-body d-flex flex-column"><h3 class="card-title h5">Data</h3><p class="card-text">Découvrir les données.</p><a href="#details" class="btn btn-primary mt-auto">Voir le détail</a></div>
+    </div></div>
+    <div class="col-12 col-md-4"><div class="card h-100">
+      <img src="../projet_final/assets/cloud.svg" class="card-img-top" alt="Illustration atelier cloud">
+      <div class="card-body d-flex flex-column"><h3 class="card-title h5">Cloud</h3><p class="card-text">Services et déploiement.</p><a href="#details" class="btn btn-primary mt-auto">Voir le détail</a></div>
+    </div></div>
+  </div>
+  <p id="details" class="mt-4 alert alert-info">Ce paragraphe est la cible des boutons.</p>
+</main>
+<script src="../vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

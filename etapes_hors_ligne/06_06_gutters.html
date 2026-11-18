@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 06 - Espacements de grille : g, gx et gy</title>
+  <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+</head>
+<body>
+<main class="container py-4">
+  <h2>Gouttières de la grille</h2>
+  <p>Avec <code>g-0</code></p>
+  <div class="row g-0 mb-4">
+    <div class="col-6"><div class="bg-primary text-white p-3">A</div></div>
+    <div class="col-6"><div class="bg-info p-3">B</div></div>
+  </div>
+  <p>Avec <code>gx-4 gy-3</code></p>
+  <div class="row gx-4 gy-3">
+    <div class="col-6"><div class="bg-primary text-white p-3">A</div></div>
+    <div class="col-6"><div class="bg-info p-3">B</div></div>
+    <div class="col-6"><div class="bg-success text-white p-3">C</div></div>
+    <div class="col-6"><div class="bg-warning p-3">D</div></div>
+  </div>
+</main>
+<script src="../vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

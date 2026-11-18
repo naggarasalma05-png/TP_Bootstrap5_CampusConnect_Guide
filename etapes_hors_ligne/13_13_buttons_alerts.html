@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 13 - Boutons, badges et alertes</title>
+  <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+</head>
+<body>
+<main class="container py-4">
+  <h2>Boutons, badges et alertes</h2>
+  <div class="d-flex flex-wrap gap-2 mb-4">
+    <button class="btn btn-primary">Enregistrer</button>
+    <button class="btn btn-outline-secondary">Annuler</button>
+    <button class="btn btn-danger btn-sm">Supprimer</button>
+    <button class="btn btn-primary" disabled>Indisponible</button>
+  </div>
+  <p>Statut : <span class="badge text-bg-success">Validé</span> <span class="badge text-bg-warning">À vérifier</span></p>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    Attention : cliquez sur le bouton de fermeture.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+  </div>
+</main>
+<script src="../vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

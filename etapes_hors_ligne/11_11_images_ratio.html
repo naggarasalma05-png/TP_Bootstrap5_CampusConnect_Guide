@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 11 - Images responsives, vignettes et ratios</title>
+  <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+</head>
+<body>
+<main class="container py-4">
+  <h2>Images responsive</h2>
+  <div class="row g-4 align-items-center">
+    <div class="col-md-6">
+      <img src="../projet_final/assets/campus.svg" class="img-fluid rounded shadow-sm" alt="Illustration stylisée d’un campus universitaire">
+    </div>
+    <div class="col-md-6">
+      <div class="ratio ratio-16x9 rounded overflow-hidden border">
+        <img src="../projet_final/assets/campus.svg" alt="Campus dans un cadre seize sur neuf" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+    </div>
+  </div>
+</main>
+<script src="../vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

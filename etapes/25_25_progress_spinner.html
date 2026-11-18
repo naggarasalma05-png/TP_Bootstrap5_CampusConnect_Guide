@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 25 - Barre de progression, spinner et placeholders</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+</head>
+<body>
+<main class="container py-4"><h2>Indicateurs d’état</h2>
+  <p id="etatChargement">Progression : 0 %</p>
+  <div class="progress mb-3" role="progressbar" aria-label="Simulation de progression" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="height:25px">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" id="barre" style="width:0%">0 %</div>
+  </div>
+  <button class="btn btn-primary" id="lancer">Démarrer la simulation</button>
+  <div class="spinner-border text-primary ms-3" role="status"><span class="visually-hidden">Chargement...</span></div>
+  <p class="placeholder-glow mt-4"><span class="placeholder col-8"></span></p>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+  <script>
+document.getElementById('lancer').addEventListener('click', () => {
+  const barre = document.getElementById('barre');
+  const zone = document.getElementById('etatChargement');
+  let pourcentage = 0;
+  const intervalle = setInterval(() => {
+    pourcentage += 10;
+    barre.style.width = pourcentage + '%';
+    barre.textContent = pourcentage + ' %';
+    barre.parentElement.setAttribute('aria-valuenow', String(pourcentage));
+    zone.textContent = pourcentage === 100 ? 'Simulation terminée !' : 'Progression : ' + pourcentage + ' %';
+    if (pourcentage >= 100) clearInterval(intervalle);
+  }, 300);
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 26 - List group et ScrollSpy</title>
+  <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+</head>
+<body>
+<main class="container py-4"><h2>Sommaire interactif</h2>
+  <div class="row">
+    <div class="col-md-4"><div id="menuSpy" class="list-group">
+      <a class="list-group-item list-group-item-action" href="#spyWeb">Web</a>
+      <a class="list-group-item list-group-item-action" href="#spyData">Data</a>
+      <a class="list-group-item list-group-item-action" href="#spyCloud">Cloud</a>
+    </div></div>
+    <div class="col-md-8"><div data-bs-spy="scroll" data-bs-target="#menuSpy" data-bs-smooth-scroll="true" tabindex="0" class="border rounded p-3" style="height:260px;overflow-y:auto;position:relative;">
+      <h3 id="spyWeb">Atelier Web</h3><p>HTML, CSS, JavaScript et Bootstrap pour construire une interface claire.</p><div style="height:130px"></div>
+      <h3 id="spyData">Atelier Data</h3><p>Collecter, structurer et visualiser des informations.</p><div style="height:130px"></div>
+      <h3 id="spyCloud">Atelier Cloud</h3><p>Comprendre l’hébergement et le déploiement.</p><div style="height:130px"></div>
+    </div></div>
+  </div>
+</main>
+<script src="../vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

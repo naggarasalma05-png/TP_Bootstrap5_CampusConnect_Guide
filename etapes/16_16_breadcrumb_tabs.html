@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 16 - Fil d’Ariane, onglets et pagination</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+</head>
+<body>
+<main class="container py-4">
+  <nav aria-label="Fil d’Ariane"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="#">Accueil</a></li><li class="breadcrumb-item active" aria-current="page">Ateliers</li></ol></nav>
+  <ul class="nav nav-tabs" id="onglets" role="tablist">
+    <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#ongletWeb" type="button" role="tab" aria-controls="ongletWeb" aria-selected="true">Web</button></li>
+    <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#ongletPlanning" type="button" role="tab" aria-controls="ongletPlanning" aria-selected="false">Planning</button></li>
+    <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#ongletRessources" type="button" role="tab" aria-controls="ongletRessources" aria-selected="false">Ressources</button></li>
+  </ul>
+  <div class="tab-content border border-top-0 p-4 mb-3" id="contenuOnglets">
+    <div class="tab-pane fade show active" id="ongletWeb" role="tabpanel" tabindex="0">Apprendre Bootstrap 5.</div>
+    <div class="tab-pane fade" id="ongletPlanning" role="tabpanel" tabindex="0">Lundi et mercredi : salle informatique.</div>
+    <div class="tab-pane fade" id="ongletRessources" role="tabpanel" tabindex="0">Documentation et exemples prêts à lancer.</div>
+  </div>
+  <nav aria-label="Pages de démonstration"><ul class="pagination">
+    <li class="page-item disabled"><span class="page-link">Précédent</span></li><li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li><li class="page-item"><a class="page-link" href="#">3</a></li>
+  </ul></nav>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+</body>
+</html>

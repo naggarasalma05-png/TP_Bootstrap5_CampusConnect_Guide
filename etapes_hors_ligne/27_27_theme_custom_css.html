@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 27 - Thème clair/sombre et CSS personnalisé</title>
+  <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+  <style>
+.carte-speciale {border:2px solid #7654c8; border-left:8px solid #7654c8;}
+  </style>
+</head>
+<body>
+<main class="container py-4">
+  <div class="d-flex justify-content-between align-items-center gap-2 mb-4"><h2 class="mb-0">Personnaliser Bootstrap</h2><button id="themeBtn" class="btn btn-outline-primary">Basculer le thème</button></div>
+  <article class="card carte-speciale"><div class="card-body"><h3 class="card-title h5">Une carte personnalisée</h3><p class="card-text">L’aspect violet vient du CSS de votre projet, pas d’une classe native de Bootstrap.</p></div></article>
+</main>
+<script src="../vendor/bootstrap.bundle.min.js"></script>
+  <script>
+document.getElementById('themeBtn').addEventListener('click', () => {
+  const racine = document.documentElement;
+  racine.dataset.bsTheme = racine.dataset.bsTheme === 'dark' ? 'light' : 'dark';
+});
+  </script>
+</body>
+</html>

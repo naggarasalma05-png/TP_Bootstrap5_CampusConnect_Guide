@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 20 - Accordéon et zone repliable</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+</head>
+<body>
+<main class="container py-4"><h2>FAQ Bootstrap</h2>
+  <div class="accordion mb-4" id="faqCampus">
+    <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#rep1" aria-expanded="true" aria-controls="rep1">Bootstrap remplace-t-il CSS ?</button></h3><div id="rep1" class="accordion-collapse collapse show" data-bs-parent="#faqCampus"><div class="accordion-body">Non. Bootstrap fournit des règles CSS réutilisables.</div></div></div>
+    <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rep2" aria-expanded="false" aria-controls="rep2">Faut-il connaître HTML ?</button></h3><div id="rep2" class="accordion-collapse collapse" data-bs-parent="#faqCampus"><div class="accordion-body">Oui, HTML organise et donne du sens au contenu.</div></div></div>
+  </div>
+  <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#astuce" aria-expanded="false" aria-controls="astuce">Afficher une astuce</button>
+  <div class="collapse mt-3" id="astuce"><div class="card card-body">Astuce : commencez toujours par le responsive mobile.</div></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+</body>
+</html>

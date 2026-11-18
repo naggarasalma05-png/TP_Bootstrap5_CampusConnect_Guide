@@ -1,0 +1,9 @@
+/* CSS propre au projet : chargé APRES Bootstrap, sans modifier le framework. */
+:root { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 86px; }
+.hero { background: linear-gradient(120deg, var(--bs-tertiary-bg), var(--bs-body-bg)); }
+.card-img-top { height: 190px; object-fit: cover; }
+.atelier { transition: transform .15s ease, box-shadow .15s ease; }
+.atelier:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,.10) !important; }
+.carousel-item img { height: clamp(240px,40vw,460px); object-fit: cover; }
+@media (prefers-reduced-motion: reduce) { .atelier { transition: none; } .atelier:hover { transform: none; } }

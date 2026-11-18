@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 04 - La grille de 12 colonnes</title>
+  <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+  <style>
+[data-demo] > div {background:#dceafe; border:1px solid #2970cb; padding:12px 0; text-align:center; border-radius:5px; font-size:13px;}
+  </style>
+</head>
+<body>
+<main class="container py-4">
+  <h2>La grille sur 12 unités</h2>
+  <div class="row g-1 mb-3">
+    <div class="col-1" data-demo><div>1</div></div><div class="col-1" data-demo><div>2</div></div>
+    <div class="col-1" data-demo><div>3</div></div><div class="col-1" data-demo><div>4</div></div>
+    <div class="col-1" data-demo><div>5</div></div><div class="col-1" data-demo><div>6</div></div>
+    <div class="col-1" data-demo><div>7</div></div><div class="col-1" data-demo><div>8</div></div>
+    <div class="col-1" data-demo><div>9</div></div><div class="col-1" data-demo><div>10</div></div>
+    <div class="col-1" data-demo><div>11</div></div><div class="col-1" data-demo><div>12</div></div>
+  </div>
+  <div class="row g-2 mb-3"><div class="col-4" data-demo><div>4/12</div></div><div class="col-8" data-demo><div>8/12</div></div></div>
+  <div class="row g-2"><div class="col-3" data-demo><div>3/12</div></div><div class="col-3" data-demo><div>3/12</div></div><div class="col-6" data-demo><div>6/12</div></div></div>
+</main>
+<script src="../vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

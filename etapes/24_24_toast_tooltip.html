@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 24 - Toast, tooltip et popover</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+</head>
+<body>
+<main class="container py-4"><h2>Notifications et aides</h2>
+  <div class="d-flex flex-wrap gap-2">
+    <button id="afficherToast" class="btn btn-primary">Afficher le toast</button>
+    <button class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-title="Une aide courte au survol ou au focus">Aide</button>
+    <button class="btn btn-outline-info" data-bs-toggle="popover" data-bs-title="CampusConnect" data-bs-content="Vous pouvez retrouver les ateliers dans le menu principal.">En savoir plus</button>
+  </div>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toastDemo" class="toast" role="status" aria-live="polite" aria-atomic="true">
+      <div class="toast-header"><strong class="me-auto">CampusConnect</strong><small>à l’instant</small><button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fermer"></button></div>
+      <div class="toast-body">Notification de démonstration affichée.</div>
+    </div>
+  </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+  <script>
+document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => new bootstrap.Tooltip(el));
+document.querySelectorAll('[data-bs-toggle="popover"]').forEach(el => new bootstrap.Popover(el));
+document.getElementById('afficherToast').addEventListener('click', () => {
+  bootstrap.Toast.getOrCreateInstance(document.getElementById('toastDemo')).show();
+});
+  </script>
+</body>
+</html>

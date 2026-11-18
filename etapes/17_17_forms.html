@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 17 - Formulaires : contrôles de saisie</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+</head>
+<body>
+<main class="container py-4"><h2>Formulaire d’inscription</h2>
+  <form class="row g-3">
+    <div class="col-md-6"><label for="nom" class="form-label">Nom complet</label><input id="nom" class="form-control" placeholder="Ex. : Sana Ben Ali" required></div>
+    <div class="col-md-6"><label for="email" class="form-label">E-mail</label><input id="email" class="form-control" type="email" placeholder="nom@exemple.tn" required></div>
+    <div class="col-md-6"><label for="parcours" class="form-label">Parcours</label><select id="parcours" class="form-select"><option>Développement Web</option><option>Réseaux</option></select></div>
+    <div class="col-md-6"><label for="site" class="form-label">Site web</label><div class="input-group"><span class="input-group-text">https://</span><input id="site" class="form-control" placeholder="mon-site.tn"></div></div>
+    <div class="col-12"><label for="message" class="form-label">Message</label><textarea id="message" class="form-control" rows="2"></textarea></div>
+    <div class="col-12"><div class="form-check"><input class="form-check-input" type="checkbox" id="accord"><label class="form-check-label" for="accord">J’accepte les conditions</label></div></div>
+    <div class="col-12"><div class="form-check form-switch"><input class="form-check-input" type="checkbox" role="switch" id="infos"><label class="form-check-label" for="infos">Recevoir les actualités</label></div></div>
+    <button type="button" class="btn btn-primary col-auto">Démonstration visuelle</button>
+  </form>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+</body>
+</html>

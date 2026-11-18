@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 15 - Barre de navigation responsive et menu déroulant</title>
+  <link rel="stylesheet" href="../vendor/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#accueil">CampusConnect</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCampus" aria-controls="menuCampus" aria-expanded="false" aria-label="Afficher la navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuCampus">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#accueil">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ateliers">Ateliers</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ressources</a>
+          <ul class="dropdown-menu"><li><a class="dropdown-item" href="#cours">Cours</a></li><li><a class="dropdown-item" href="#faq">FAQ</a></li></ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="container py-4"><h2 id="accueil">Accueil</h2><p id="ateliers">Bienvenue sur CampusConnect.</p><p id="cours">Ressources du cours.</p><p id="faq">Questions fréquentes.</p></main>
+<script src="../vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

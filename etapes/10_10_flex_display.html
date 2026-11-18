@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Bootstrap 5 - 10 - Flexbox et affichage responsive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+</head>
+<body>
+<main class="container py-4">
+  <h2>Aligner avec Flexbox</h2>
+  <div class="d-flex justify-content-between align-items-center gap-2 p-3 bg-body-tertiary rounded">
+    <strong>Logo CampusConnect</strong>
+    <button class="btn btn-primary btn-sm">Connexion</button>
+  </div>
+  <div class="d-md-flex align-items-center justify-content-center gap-3 border mt-3 p-3">
+    <span class="badge text-bg-secondary">HTML</span>
+    <span class="badge text-bg-success">CSS</span>
+    <span class="badge text-bg-primary">Bootstrap</span>
+  </div>
+  <p class="d-none d-md-block mt-3 text-success">Message visible à partir de md.</p>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+</body>
+</html>
